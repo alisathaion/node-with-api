@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<div class="container">
+
+    <h1><%= title %></h1>
+
+    <ul class="nav nav-tabs">
+    <li><a href="/">Order</a></li>
+    <li class="active"><a href="/orderlist">Order Lists</a></li>
+    </ul>
+    <br/>
+    <!-- Search form -->
+    <input class="form-control" type="search" placeholder="Search By Firstname or Phone Number" aria-label="Search" id="search">
+    <br />
+
+    <div class="row">
+        <div class="w-100">
+        <table class="table table-striped table-bordered
+        table-hover table-condensed" id="orderlist">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Pizza Details</th> 
+            <th>Qty</th>
+            <th>Total</th>
+        </tr>
+        </table>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="javascripts/orderlists.js"></script>
+</html>
