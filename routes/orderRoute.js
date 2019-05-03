@@ -21,6 +21,11 @@ router.get('/orderlist', function(req, res){
     var vm = {title : "Order Your Pizza"};
     res.render('orderlist', vm);
 });
+//send data shows in page orderlist.ejs
+router.get('/resource', function(req, res){
+    var vm = {title : "Resources"};
+    res.render('resource', vm);
+});
 
 var search = "";
 router.post('/orderlist', function(req, res){

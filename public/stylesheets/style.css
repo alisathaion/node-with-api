@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -17,4 +17,14 @@ a {
 legend{
 	font-weight:bold;
 	color:#a1937e;
+}
+
+footer{
+	height: 5vh;
+	padding: 8px;
+	background-color: whitesmoke;
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	color: grey;
 }
