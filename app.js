@@ -8,7 +8,8 @@ let mongoose = require('mongoose');
 var orderRoute = require('./routes/orderRoute');
 
 //Set up connectivity to MongoDB
-const mongoUrl = 'mongodb://localhost:27017/orders';
+//mongodb://localhost:27017/orders
+const mongoUrl = 'mongodb+srv://dbUser:user@cluster0-8omoj.gcp.mongodb.net/test?retryWrites=true';
 mongoose.connect(mongoUrl, { useNewUrlParser: true }, function (err) {
   if (err) {
     console.log("Error connecting to MongoDB");
